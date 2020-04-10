@@ -8,14 +8,18 @@
 <body>
   <div id="agrupar">
     <header id="cabecera">
-      <h1><a href="{{ url_for('mostrar_todo') }}" style=”text-decoration:none;”>LIBRERIA PETRA</a></h1>
+      <h1><a href="{{ url_for('mostrar_todo') }}">LIBRERIA PETRA</a></h1>
     </header>
 
   <nav id="menu">
-    <h2>Libros (<a href="{{ url_for('nuevo') }}" style=”text-decoration:none;”>Agregar Libros</a>)</h2>
+    <ul>
+      <li>Nosotros</li>
+      <li>Contactenos</li>
+    </ul>
   </nav>
 
   <section id="seccion1">
+    <h2>Listado de libros</h2>
     <form action="http://127.0.0.1:5000/eliminar/" method="post">
       <table>
         <thead>
@@ -49,22 +53,26 @@
   </section>
 
   <section id="seccion2">
-      <form action="http://127.0.0.1:5000/comprar/" method="post">
-        <h3>
-          Vender Libro
-        </h3>
-        <label>Codigo del Libro</label>
-        <input type="text" size="2" name ="id">
-        <label>Cantidad</label>
-        <input type="text" size="2" name = "cantidad">
-        <input type="submit" value="Vender">
-     </form>
-    {%- for categoria, mensaje in get_flashed_messages(with_categories=true)  %}
-    <div class="alert alert-danger">
-    {{ mensaje }}
-    </div>
-    {%- endfor %}
+        <form action="http://127.0.0.1:5000/comprar/" method="post">
+          <h2>
+            Vender Libro
+          </h2>
+          <label>Codigo del Libro</label>
+          <input type="text" size="2" name ="id">
+          <label>Cantidad</label>
+          <input type="text" size="2" name = "cantidad">
+          <input type="submit" value="Vender">
+        </form>
+        {%- for categoria, mensaje in get_flashed_messages(with_categories=true)  %}
+        <div class="alert alert-danger">
+          {{ mensaje }}
+        </div>
+        {%- endfor %}
   </section>
+
+ <section id="seccion3">
+     <a href="{{ url_for('nuevo') }}">Agregar Libros</a>
+ </section>
 
   <footer>
     <small> Derechos reservados &copy; 2017 - 2020 </small>
