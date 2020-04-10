@@ -3,14 +3,19 @@
   padding: 0px;
 }
 
-h1{
+h1 > a{
   font: bold 50px verdana , sans-serif;
+  text-decoration: none;
+
+}
+
+ h2 > a{
+  font: bold 20px verdana, sans-serif;
   text-decoration: none;
 }
 
-h2{
+h2 {
   font: bold 20px verdana, sans-serif;
-  text-decoration: none;
 }
 
 th{
@@ -36,31 +41,34 @@ body{
 }
 
 #cabecera {
-  background: #FFFBB9;
+  background: #dcdcdc;
   border: 1px solid #999999;
   padding: 20px;
   border-radius: 10px 10px 0px 0px;
   text-align: center;
+
 }
 
 #seccion1{
   border: 1px solid #999999;
   padding: 20px;
-  background: #FFFBB9;
+  background: #fffff0;
+  margin: 3px;
 }
 
 #seccion2{
   border: 1px solid #999999;
   padding: 20px;
- background: #FFFBB9;
+  background: #fffff0;
+  margin: 3px;
 }
 
 #menu{
-  background: #CCCCCC;
+  background: #fffff0;
 }
 
 footer{
-  background: #CCCCCC;
+  background: #dcdcdc;
   text-align: center;
   border-radius: 0px 0px 10px 10px;
 }
