@@ -4,11 +4,13 @@
 }
 
 h1{
-  font: bold 30px verdana , sans-serif;
+  font: bold 50px verdana , sans-serif;
+  text-decoration: none;
 }
 
 h2{
   font: bold 20px verdana, sans-serif;
+  text-decoration: none;
 }
 
 th{
@@ -37,33 +39,28 @@ body{
   background: #FFFBB9;
   border: 1px solid #999999;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 10px 10px 0px 0px;
   text-align: center;
 }
 
 #seccion1{
-  margin: 15px auto;
   border: 1px solid #999999;
   padding: 20px;
-  border-radius: 5px;
   background: #FFFBB9;
 }
 
 #seccion2{
-  margin: 15px auto;
   border: 1px solid #999999;
   padding: 20px;
-  border-radius: 5px;
-  background: #FFFBB9;
+ background: #FFFBB9;
 }
 
 #menu{
   background: #CCCCCC;
-  margin: 15px auto;
-  border-radius: 5px;
 }
 
 footer{
   background: #CCCCCC;
   text-align: center;
+  border-radius: 0px 0px 10px 10px;
 }
